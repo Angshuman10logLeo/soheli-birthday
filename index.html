@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Soheli ❤️</title>
+
+<style>
+body {
+  margin:0;
+  font-family:'Comic Sans MS', cursive, sans-serif;
+  background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+  overflow-x:hidden;
+}
+
+section {
+  display:none;
+  height:100vh;
+  text-align:center;
+  padding:40px;
+  color:#fff;
+}
+
+.active {
+  display:block;
+  animation:fade 1.2s ease-in-out;
+}
+
+@keyframes fade {
+  from {opacity:0; transform:translateY(30px);} 
+  to {opacity:1; transform:translateY(0);} 
+}
+
+h1,h2 {
+  text-shadow:2px 2px 6px rgba(0,0,0,0.2);
+}
+
+button {
+  padding:14px 30px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  background:#ff4b6e;
+  color:white;
+  cursor:pointer;
+  margin-top:20px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+button:hover {
+  transform:scale(1.08);
+  background:#ff1e4d;
+}
+
+.gallery img {
+  width:180px;
+  margin:12px;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+
+.gallery img:hover {
+  transform:scale(1.08);
+}
+
+.hidden {
+  display:none;
+}
+
+video {
+  width:320px;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.heart {
+  position:fixed;
+  bottom:-10px;
+  font-size:24px;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float {
+  from {transform:translateY(0);} 
+  to {transform:translateY(-120vh);} 
+}
+
+.glow-name {
+  font-size: 42px;
+  font-weight: bold;
+  color: #fff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff9ac4, 0 0 30px #ff4b6e;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 35px #ff4b6e, 0 0 50px #ff1e4d;
+  }
+} 
+  to {transform:translateY(-120vh);} 
+
+
+</style>
+</head>
+
+<body>
+
+<div class="heart" style="left:10%">💖</div>
+<div class="heart" style="left:30%">💕</div>
+<div class="heart" style="left:50%">💗</div>
+<div class="heart" style="left:70%">💘</div>
+<div class="heart" style="left:90%">💝</div>
+
+<section id="page1" class="active">
+<h1>🎂 Someone very special has a birthday today 🎂</h1>
+<p>And I made something just for you 💌</p>
+<button onclick="nextPage(2)">Start Surprise ✨</button>
+</section>
+
+<section id="page2">
+<h1><span class="glow-name">Happy Birthday Soheli Hazra 💖</span></h1>
+<p>You are my favorite person in this world 🌍❤️</p>
+<button onclick="nextPage(3)">Continue ➜</button>
+</section>
+
+<section id="page3">
+<h2>✨ Our Story Began Here ✨</h2>
+<p>We first talked on 15 February 2023 💬</p>
+<p>And my world changed after that day ❤️</p>
+<button onclick="nextPage(4)">Next Memory 📖</button>
+</section>
+
+<section id="page4">
+<h2>💫 My Favorite Memory With You 💫</h2>
+<p>Spending the whole day together pandal hopping 🎡</p>
+<p>And enjoying Quest carnival in school 🎠</p>
+<button onclick="nextPage(5)">Next ➜</button>
+</section>
+
+<section id="page5">
+<h2>📸 Our Beautiful Memories 📸</h2>
+<div class="gallery">
+<img src="photo1.jpg.jpeg">
+<img src="photo2.jpg.jpeg">
+<img src="photo3.jpg.jpeg">
+<img src="photo4.jpg.jpeg">
+<img src="photo5.jpg.jpeg">
+</div>
+<p>Every moment with you becomes my favorite memory 💕</p>
+<button onclick="nextPage(6)">Next ➜</button>
+</section>
+
+<section id="page6">
+<h2>💛 Why You Are Special To Me 💛</h2>
+<p>You are the exact copy of me in opposite gender ✨</p>
+<p>Your personality and vibe perfectly match mine 🌈</p>
+<p>For me, the definition of a perfect woman is YOU 💖</p>
+<button onclick="nextPage(7)">Next ➜</button>
+</section>
+
+<section id="page7">
+<h2>🌍 Our Future Together 🌍</h2>
+<p>We will travel the whole world together ✈️</p>
+<p>Explore new places and experiences 🌏</p>
+<p>And face every challenge side by side 🤝</p>
+<button onclick="nextPage(8)">Secret Button 🎁</button>
+</section>
+
+<section id="page8">
+<h2>Click Only If You Trust Me 😉</h2>
+<button onclick="showSurprise()">Click Me 💝</button>
+
+<div id="surprise" class="hidden">
+<h3>Happy Birthday my favorite person 💖</h3>
+<h3>my best friend 🤝 my bestie 🌟</h3>
+<h3>my girlfriend ❤️ my HG 💫</h3>
+
+<p>I am really lucky to have you in my life 🥹</p>
+<p>Thank you for being YOU 💛</p>
+
+<h2>🎬 A Small Video Just For You 🎬</h2>
+
+<video controls>
+<source src="birthday.mp4" type="video/mp4">
+</video>
+
+</div>
+</section>
+
+<script>
+function nextPage(pageNumber) {
+  document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+  document.getElementById("page" + pageNumber).classList.add("active");
+}
+
+function showSurprise() {
+  document.getElementById("surprise").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
